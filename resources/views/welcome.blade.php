@@ -11,10 +11,10 @@
 </html>
 
 <style>
-    #app{
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
+    body{
+        height: 100dvh;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 </style>
