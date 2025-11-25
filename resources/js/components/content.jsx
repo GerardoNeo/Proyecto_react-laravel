@@ -1,7 +1,12 @@
 export default Content;
+import { useState } from "react";
 
-function Content(){
-    let cosas = [
+import Recetas from "../components/recetas";
+
+export function Content(){
+    let [lista, setActivo] = useState(false);
+
+    let recetas = [
         {
             nombre: "Manzana",
             porciones: "30",
@@ -117,9 +122,9 @@ function Content(){
                             
                             <div style={{display: "flex", alignItems: "center", flexDirection: "row",
                                 width: "90%", height: "60%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
-                                borderRadius: "50px", justifyContent: "space-evenly"
+                                borderRadius: "50px", justifyContent: "space-evenly", padding: "2px"
                                 }}>
-                                <input type="text" placeholder="Buscar..." style={{width: "90%", height: "100%", 
+                                <input type="text" placeholder="Buscar..." style={{width: "93%", height: "100%", 
                                     border: "none", padding: "0", margin: "0", borderRadius: "10px 0px 0px 10px",
                                     outline: "none"
                                 }}/>
@@ -128,49 +133,22 @@ function Content(){
                             </div>
                             <div style={{width: "8%", height: "60%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
                                 borderRadius: "30px", display: "flex", flexDirection: "row", justifyContent: "space-evenly",
-                                alignItems: "center"
+                                alignItems: "center", padding: "2px"
                                 }}>
-                                <div style={{width: "50%", aspectRatio: "1/1", borderRadius: "50%",
-                                    display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer"
-                                    }}>
-                                    <i class='bx bx-list-ul' style={{fontSize: "22px"}}></i>
+                                <div style={{width: "50%", aspectRatio: "1/1", borderRadius: "50%", backgroundColor: lista ? "#ffecbb" : "white",
+                                    display: "flex", justifyContent: "center", alignItems: "center", transition: ".5s",
+                                    }} onClick={() => setActivo(true)}>
+                                    <i class='bx bx-list-ul' style={{fontSize: "22px", cursor: "pointer"}}></i>
                                 </div>
-                                <div style={{width: "50%", aspectRatio: "1/1", borderRadius: "50%", backgroundColor: "#ffecbb",
-                                    display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer"
+                                <div style={{width: "50%", aspectRatio: "1/1", borderRadius: "50%", backgroundColor: lista ? "white" : "#ffecbb",
+                                    display: "flex", justifyContent: "center", alignItems: "center", transition: ".5s"
 
-                                    }}>
-                                    <i class='bx bx-grid-alt' style={{fontSize: "22px"}}></i>
+                                    }} onClick={() => setActivo(false)}>
+                                    <i class='bx bx-grid-alt' style={{fontSize: "22px", cursor: "pointer"}}></i>
                                 </div>
                             </div>
                         </div>
-                        <div style={{display: "grid", gridTemplateColumns: "repeat(3, 350px)",
-                            width: "100%", height: "88%", gridAutoRows: "150px", overflowY: "auto",
-                            justifyItems: "center", alignItems: "center"}}>
-                            {cosas.map((cosa, i) => (
-                                <div key={i} style={{display: "flex", width: "300px", alignItems: "center",
-                                    justifyContent: "center", height: "90px", backgroundColor: "white", 
-                                    borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px", 
-                                    borderTop: "10px solid #f1d99b", flexDirection: "column", cursor: "pointer"
-                                    }}>
-                                    <div style={{width: "80%", height: "30%", alignItems: "flex-end"}}>
-                                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontWeight: "bold", fontSize: "18px",
-                                        color: "rgba(0, 0, 0, 0.7)"
-                                        }}>{cosa.nombre}</p>
-                                    </div>
-                                    <div style={{width: "80%", height: "1px", backgroundColor: "rgba(0, 0, 0, 0.2)"
-                                        }}>
-                                    </div>
-                                    <div style={{display: "flex", width: "80%", height: "30%",
-                                        justifyContent: "space-between", alignItems: "center"}}>
-                                            <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "12px", color: "rgba(0, 0, 0, 0.35)"
-                                            }}>Porciones</p>
-                                            <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "12px", color: "rgba(0, 0, 0, 0.35)"
-                                            }}>{cosa.porciones}</p>
-                                    </div>
-                                </div>
-                            ))}
-                            
-                        </div>
+                        <Recetas cosas = {recetas} lista ={lista}/>
                     </div>
             </div>
         </div>
