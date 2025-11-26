@@ -8,102 +8,140 @@ export function Content({ component: Componente }){
         {
             nombre: "Manzana",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         },
         {
             nombre: "Pera",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         },
         {
             nombre: "Platano",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         },
         {
             nombre: "Uva",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFF4C7",
+            borde: "#D0B60C"
         },
         {
-            nombre: "Pera",
+            nombre: "Naranja",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Platano",
+            nombre: "Piña",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Uva",
+            nombre: "Rambutan",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Pera",
+            nombre: "Melon",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Platano",
+            nombre: "Sandia",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFF4C7",
+            borde: "#D0B60C"
         },
         {
-            nombre: "Uva",
+            nombre: "Guaya",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         },
         {
-            nombre: "Pera",
+            nombre: "Mango",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFF4C7",
+            borde: "#D0B60C"
         },
         {
-            nombre: "Platano",
+            nombre: "Limon",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Uva",
+            nombre: "Fresa",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Pera",
+            nombre: "Durazno",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Platano",
+            nombre: "Kiwi",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Uva",
+            nombre: "Papaya",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         },
         {
-            nombre: "Pera",
+            nombre: "Frambuesa",
             porciones: "20",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Platano",
+            nombre: "Arandano",
             porciones: "15",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFFFFF",
+            borde: "transparent"
         },
         {
-            nombre: "Uva",
+            nombre: "Mandarina",
             porciones: "30",
-            gramaje: "kg"
+            gramaje: "kg",
+            fondo: "#FFCFCF",
+            borde: "#F53D3D"
         }
     ]
 
     return (
-        <div style={{width: "90%", height: "100%", display: "flex", 
+        <div style={{width: "92%", height: "100%", display: "flex", 
         justifyContent: "center", alignItems: "flex-end"
         }}>
             <div style={{width: "93%", height: "95%", backgroundColor: "white", 

@@ -7,7 +7,7 @@ export function Inventario({cosas, lista}){
             flexDirection: lista ? "column" : undefined, 
             width: "100%", height: "84%", gap: "1em", overflowY: "auto", 
             paddingTop: "1em", alignItems: "center", justifyItems: "center",
-            gridTemplateColumns: lista ? undefined : "repeat(3, 340px)",
+            gridTemplateColumns: lista ? undefined : "repeat(4, 270px)",
             gridAutoRows: lista ? undefined : "max-content",
             boxShadow: "inset 0px 3px 6px rgba(255, 255, 255, 0.3)",
             marginBottom: "4%", paddingBottom: "1em"
@@ -16,8 +16,9 @@ export function Inventario({cosas, lista}){
                 cosas.map((cosa, i) => {
                     if(lista == false){
                         return(
-                            <div key={i} style={{display: "flex", width: "300px", alignItems: "center",
-                                justifyContent: "center", height: "90px", backgroundColor: "white", 
+                            <div key={i} style={{display: "flex", width: "250px", alignItems: "center",                      
+                                outline: `1px solid ${cosa.borde}`,
+                                justifyContent: "center", height: "80px", backgroundColor: cosa.fondo, 
                                 borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px", 
                                 borderTop: "10px solid #f1d99b", flexDirection: "column", cursor: "pointer",
                                 }}>
@@ -35,16 +36,17 @@ export function Inventario({cosas, lista}){
                                 <div style={{display: "flex", width: "80%", height: "30%",
                                     justifyContent: "space-between", alignItems: "center"}}>
                                     <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "12px", color: "rgba(0, 0, 0, 0.35)"
-                                    }}>Porciones</p>
-                                    <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "12px", color: "rgba(0, 0, 0, 0.35)"
                                     }}>{cosa.porciones}</p>
+                                    <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "12px", color: "rgba(0, 0, 0, 0.35)"
+                                    }}>{cosa.gramaje}</p>
                                     </div>
                                 </div>
                             )}else{
                                 return(
                                     <div style={{display:"flex", justifyContent: "space-evenly", alignItems: "center",
-                                        width: "99%", backgroundColor: "white", height: "40px", cursor: "pointer",
-                                        borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px"}}>
+                                        width: "99%", backgroundColor: cosa.fondo, height: "40px", cursor: "pointer",
+                                        borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px",
+                                        outline: "1px solid" + cosa.borde}}>
                                         <p style={{margin: "0", fontFamily: "Poppins, serif", fontWeight: "bold", fontSize: "18px",
                                             color: "rgba(0, 0, 0, 0.7)", width: "87%"
                                             }}>{cosa.nombre}</p>

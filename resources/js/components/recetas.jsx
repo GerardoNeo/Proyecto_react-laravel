@@ -7,7 +7,7 @@ export function Recetas({cosas, lista}){
             flexDirection: lista ? "column" : undefined, 
             width: "100%", height: "84%", gap: "1em", overflowY: "auto", 
             paddingTop: "1em", alignItems: "center", justifyItems: "center",
-            gridTemplateColumns: lista ? undefined : "repeat(3, 340px)",
+            gridTemplateColumns: lista ? undefined : "repeat(4, 270px)",
             gridAutoRows: lista ? undefined : "max-content",
             boxShadow: "inset 0px 3px 6px rgba(255, 255, 255, 0.3)",
             marginBottom: "4%", paddingBottom: "1em"
@@ -16,8 +16,8 @@ export function Recetas({cosas, lista}){
                 cosas.map((cosa, i) => {
                     if(lista == false){
                         return(
-                            <div key={i} style={{display: "flex", width: "300px", alignItems: "center",
-                                justifyContent: "center", height: "90px", backgroundColor: "white", 
+                            <div key={i} style={{display: "flex", width: "250px", alignItems: "center",
+                                justifyContent: "center", height: "80px", backgroundColor: "white", 
                                 borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px", 
                                 borderTop: "10px solid #f1d99b", flexDirection: "column", cursor: "pointer",
                                 }}>
