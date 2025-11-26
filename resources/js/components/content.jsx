@@ -1,9 +1,7 @@
 export default Content;
-import { useState } from "react";
+import { Component, useState } from "react";
 
-import Recetas from "../components/recetas";
-
-export function Content(){
+export function Content({ component: Componente }){
     let [lista, setActivo] = useState(false);
 
     let recetas = [
@@ -148,7 +146,7 @@ export function Content(){
                                 </div>
                             </div>
                         </div>
-                        <Recetas cosas = {recetas} lista ={lista}/>
+                        <Componente cosas={recetas} lista={lista}/>
                     </div>
             </div>
         </div>

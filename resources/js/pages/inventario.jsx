@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom/client';
 
 import SideBar from '../components/sideBar';
 import Content from '../components/content';
-import Recetas from '../components/recetas';
+import Inventario from '../components/inventario';
+
 
 function App() {
   let [contador, setContador] = useState(0);
@@ -13,8 +14,8 @@ function App() {
   return (
     <div style={{width: "100%", height: "100vh", display: "flex", 
       flexDirection: "row"}}>
-      <SideBar page={3}/>
-      <Content component={Recetas}/>
+      <SideBar page={4}/>
+      <Content component={Inventario}/>
     </div>
   );
 }
