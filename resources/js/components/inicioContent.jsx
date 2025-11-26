@@ -73,8 +73,8 @@ function InicioContent(){
                             pedidos.map((pedido, i) => {
                                 return (
                                     <div key={i} style={{display: "flex", justifyContent: "space-around", borderRadius: "10px",
-                                        width: "95%", height: "100px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px",
-                                        flexDirection: "row", alignItems: "center", cursor: "pointer"
+                                        width: "98%", height: "100px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px",
+                                        flexDirection: "row", alignItems: "center", cursor: "pointer", flexShrink: 0
                                     }}>
                                         <div style={{height: "70%", width: "auto", aspectRatio: "1/1", backgroundColor: "violet",
                                             borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -104,7 +104,22 @@ function InicioContent(){
                     </div>
                 </div>
                 <div style={{width: "95%", height: "40%", borderRadius: "10px"}}>
+                    <div>
 
+                        <p>Calendario</p>
+                    </div>
+                    <div>
+
+                        <p>Recetas</p>
+                    </div>
+                    <div>
+
+                        <p>Inventario</p>
+                    </div>
+                    <div>
+
+                        <p>Postres</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ export function Inventario({cosas, lista}){
                         return(
                             <div key={i} style={{display: "flex", width: "250px", alignItems: "center",                      
                                 outline: `1px solid ${cosa.borde}`,
-                                justifyContent: "center", height: "80px", backgroundColor: cosa.fondo, 
+                                justifyContent: "center", height: "80px", backgroundColor: cosa.fondo, flexShrink: 0,
                                 borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px", 
                                 borderTop: "10px solid #f1d99b", flexDirection: "column", cursor: "pointer",
                                 }}>
@@ -46,7 +46,7 @@ export function Inventario({cosas, lista}){
                                     <div style={{display:"flex", justifyContent: "space-evenly", alignItems: "center",
                                         width: "99%", backgroundColor: cosa.fondo, height: "40px", cursor: "pointer",
                                         borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px",
-                                        outline: "1px solid" + cosa.borde}}>
+                                        outline: "1px solid" + cosa.borde, flexShrink: 0}}>
                                         <p style={{margin: "0", fontFamily: "Poppins, serif", fontWeight: "bold", fontSize: "18px",
                                             color: "rgba(0, 0, 0, 0.7)", width: "87%"
                                             }}>{cosa.nombre}</p>

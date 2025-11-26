@@ -17,7 +17,7 @@ export function Recetas({cosas, lista}){
                     if(lista == false){
                         return(
                             <div key={i} style={{display: "flex", width: "250px", alignItems: "center",
-                                justifyContent: "center", height: "80px", backgroundColor: "white", 
+                                justifyContent: "center", height: "80px", backgroundColor: "white", flexShrink: 0,
                                 borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px", 
                                 borderTop: "10px solid #f1d99b", flexDirection: "column", cursor: "pointer",
                                 }}>
@@ -40,7 +40,7 @@ export function Recetas({cosas, lista}){
                             )}else{
                                 return(
                                     <div style={{display:"flex", justifyContent: "space-evenly", alignItems: "center",
-                                        width: "99%", backgroundColor: "white", height: "40px", cursor: "pointer",
+                                        width: "99%", backgroundColor: "white", height: "40px", cursor: "pointer", flexShrink: 0,
                                         borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 1px"}}>
                                         <p style={{margin: "0", fontFamily: "Poppins, serif", fontWeight: "bold", fontSize: "18px",
                                             color: "rgba(0, 0, 0, 0.7)", width: "87%"
