@@ -3,6 +3,7 @@ import { Component, useState } from "react";
 
 export function Content({ component: Componente }){
     let [lista, setActivo] = useState(false);
+    let [buscar, setSearch] = useState("");
 
     let recetas = [
         {
@@ -163,8 +164,8 @@ export function Content({ component: Componente }){
                                 <input type="text" placeholder="Buscar..." style={{width: "93%", height: "100%", 
                                     border: "none", padding: "0", margin: "0", borderRadius: "10px 0px 0px 10px",
                                     outline: "none"
-                                }}/>
-                                <i class="bx bx-search" aria-hidden="true" style={{fontSize: "150%"
+                                }} onChange={(e) => setSearch(e.target.value)} />
+                                <i className="bx bx-search" aria-hidden="true" style={{fontSize: "150%"
                                 }}></i>
                             </div>
                             <div style={{width: "8%", height: "60%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
@@ -184,7 +185,7 @@ export function Content({ component: Componente }){
                                 </div>
                             </div>
                         </div>
-                        <Componente cosas={recetas} lista={lista}/>
+                        <Componente cosas={recetas} lista={lista} buscar={buscar}/>
                     </div>
             </div>
         </div>
