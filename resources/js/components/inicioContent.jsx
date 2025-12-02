@@ -14,22 +14,22 @@ function InicioContent(){
 
     let pedidos = [{
         folio: "0007",
-        nombre: "James",
+        nombre: "James Bones",
         descripcion: "Cupcake de mantequilla",
         fecha: "Sabado, 05 de abril de 2025",
         hora: "4:31"
         },
         {   
             folio: "0117",
-            nombre: "John",
+            nombre: "John -Sierra 117",
             descripcion: "Cupcake de mora azul",
             fecha: "Sabado, 22 de agosto de 2552",
             hora: "26:31"
         },
         
         {   
-            folio: "0117",
-            nombre: "John",
+            folio: "0058",
+            nombre: "Linda",
             descripcion: "Cupcake de mora azul",
             fecha: "Sabado, 22 de agosto de 2552",
             hora: "26:31"
@@ -107,32 +107,32 @@ function InicioContent(){
                 <div style={{width: "95%", height: "40%", borderRadius: "10px",
                     display: "flex", justifyContent: "space-between", alignItems: "center"
                     }}>
-                    <a style={{width: "20%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
+                    <a style={{width: "22%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
                         borderRadius: "10px", display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: "column", textDecorationLine: "none"}} href="/calendario">
                         <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(138, 138, 142, 1)"}} width="250" height="250" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-calendar-range-icon lucide-calendar-range"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M17 14h-6"/><path d="M13 18H7"/><path d="M7 14h.01"/><path d="M17 18h.01"/></svg>
-                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "45px", color: "rgba(138, 138, 142, 1)"
+                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "40px", color: "rgba(138, 138, 142, 1)"
                             }}>Calendario</p>
                     </a>
-                    <a style={{width: "20%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
+                    <a style={{width: "22%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
                         borderRadius: "10px", display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: "column", textDecorationLine: "none"}} href="/recetas">
                         <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(138, 138, 142, 1)"}} width="250" height="250" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-notepad-text-icon lucide-notepad-text"><path d="M8 2v4"/><path d="M12 2v4"/><path d="M16 2v4"/><rect width="16" height="18" x="4" y="4" rx="2"/><path d="M8 10h6"/><path d="M8 14h8"/><path d="M8 18h5"/></svg>
-                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "45px", color: "rgba(138, 138, 142, 1)"
+                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "40px", color: "rgba(138, 138, 142, 1)"
                             }}>Recetas</p>
                     </a>
-                    <a style={{width: "20%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
+                    <a style={{width: "22%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
                         borderRadius: "10px", display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: "column", textDecorationLine: "none"}} href="/inventario">
                         <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(138, 138, 142, 1)"}} width="250" height="250" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "45px", color: "rgba(138, 138, 142, 1)"
+                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "40px", color: "rgba(138, 138, 142, 1)"
                             }}>Inventario</p>
                     </a>
-                    <a style={{width: "20%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
+                    <a style={{width: "22%", height: "95%", boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 7px 2px",
                         borderRadius: "10px", display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: "column", textDecorationLine: "none", cursor: "p"}} href="/postres">
                         <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(138, 138, 142, 1)"}} width="250" height="250" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-cake-icon lucide-cake"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
-                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "45px", 
+                        <p style={{margin: "0", fontFamily: "Poppins, serif", fontSize: "40px", 
                             color: "rgba(138, 138, 142, 1)"
                             }}>Postres</p>
                     </a>

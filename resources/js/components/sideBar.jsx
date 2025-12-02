@@ -1,14 +1,18 @@
 export default SideBar;
+import React, { useState } from 'react';
 
-function SideBar({page}){
+function SideBar({page, click, setClick}){
+
     return (
         <div style={{
             height: "100%", width: "8%", backgroundColor: "white",
             boxShadow: "2px 0px 7px 0px rgba(0, 0, 0, 0.15)",
             }}>
             <div style={{height: "25%", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "60px", cursor: "pointer"}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(0,0,0,0.3)"}} width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
+                <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "60px", cursor: "pointer"}}
+                    onClick={() => setClick(!click)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" style={{color: "rgba(195, 167, 128, 0.9)", 
+                        backgroundColor: click ? "#f1d99b" : "transparent", borderRadius: "50%"}} width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
                 </div>
             </div>
             <div style={{display: "flex", flexDirection: "column", justifyContent: "space-evenly",
